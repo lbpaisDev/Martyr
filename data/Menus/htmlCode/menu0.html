@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data/assets/ui/ui_logo.png">
+    <script src="../jsCode/mainMenu.js"></script>
+    <style>
+	    body{
+	      	opacity:0;
+	        background: black;
+			image-rendering: -moz-crisp-edges;
+	     	image-rendering: -webkit-crisp-edges;
+	    	image-rendering: pixelated;
+	    	image-rendering: crisp-edges;
+		}    
+		input {
+			background-color: Transparent;
+			 background-repeat: no-repeat;
+		 border: none;
+				outline: 0;
+				  cursor:pointer;
+			 overflow: hidden;  
+			 position: absolute;
+				image-rendering: -moz-crisp-edges;
+	     		  image-rendering: -webkit-crisp-edges;
+	    	    image-rendering: pixelated;
+	    	    image-rendering: crisp-edges;
+		 }
+
+	      #play {
+		 			left: 41%;
+		 			top: 55%;
+
+					image-rendering: -moz-crisp-edges;
+	     		image-rendering: -webkit-crisp-edges;
+	    	  image-rendering: pixelated;
+	    	  image-rendering: crisp-edges;
+		 		}
+
+		 		#help {
+		 			left: 41%;
+		 			top: 63%;
+
+					 image-rendering: -moz-crisp-edges;
+	     		 image-rendering: -webkit-crisp-edges;
+	    	   image-rendering: pixelated;
+	    	   image-rendering: crisp-edges;
+		 		}
+		 		
+		 		#credits {
+		 			left: 41%;
+		 			top: 71%;
+		 
+					image-rendering: -moz-crisp-edges;
+	     		image-rendering: -webkit-crisp-edges;
+	    	  image-rendering: pixelated;
+	    	  image-rendering: crisp-edges;
+		 		}
+		 		
+		 		#quit{
+		 			left: 41%;
+		 			top: 79%;
+
+					image-rendering: -moz-crisp-edges;
+	     		image-rendering: -webkit-crisp-edges;
+	    	  image-rendering: pixelated;
+	    	  image-rendering: crisp-edges;
+		 		}
+    </style>
+  </head>
+  <body style="opacity:0;">
+  	<image id="bg" src="../assets/bg_mainMenu.png" style="
+  			margin-top:8%;
+			image-rendering: -moz-crisp-edges;
+	     	image-rendering: -webkit-crisp-edges;
+	    	image-rendering: pixelated;
+	    	image-rendering: crisp-edges;"
+    <main>
+        <nav>
+			<input type = "image" id = "play" src  = "../assets/ui_btnPlay_off.png" ></input>
+            <input type = "image" id = "help" src  = "../assets/ui_btnHelp_off.png" ></input>
+            <input type = "image" id = "credits" src  = "../assets/ui_btnCredits_off.png" ></input>
+			<input type = "image" id = "quit" src  = "../assets/ui_btnQuit_off.png" onclick="windowClose()"></input>
+			<audio>
+			    <source id = "hoover"  src = "../assets/cursormove.mp3 " type="audio/mpeg">
+			</audio>
+        </nav>
+    </main>
+  </body>
+</html>

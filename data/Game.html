@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ALPHA</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="Game.js" 		 defer="true"></script>
+		<script type="text/javascript" src="Entity.js" 		 defer="true"></script>
+		<script type="text/javascript" src="Player.js" 		 defer="true"></script>
+		<script type="text/javascript" src="Enemy.js" 		 defer="true"></script>
+		<script type="text/javascript" src="Camera.js" 		 defer="true"></script>
+		<script type="text/javascript" src="Tile.js" 		 defer="true"></script>
+		<script type="text/javascript" src="Scene.js" 		 defer="true"></script>
+		<script type="text/javascript" src="HUD.js" 		 defer="true"></script>
+		<script type="text/javascript" src="Interactable.js" defer="true"></script>
+		<script type="text/javascript" src="Door.js" 		 defer="true"></script>
+		<script type="text/javascript" src="Actor.js" 		 defer="true"></script>
+		<script type="text/javascript" src="Level.js" 		 defer="true"></script>
+		<script type="text/javascript" src="LevelDoor.js" 	 defer="true"></script>
+		<script type="text/javascript" src="PauseBox.js" 	 defer="true"></script>
+		<script type="text/javascript" src="TextBox.js" 	 defer="true"></script>
+		<script type="text/javascript" src="Boss.js" 	 defer="true"></script>
+	</head>
+	<style>
+		body
+		{
+			background-color: #000;
+		}
+	</style>
+	<body>
+		<!-- Offscreen Canvasses -->
+		<canvas id="parallaxLayer3" 
+			width="4000" height="496"
+			style="display: none; position: absolute; left: 0; top: 0; z-index: -3;"></canvas>
+		<canvas id="parallaxLayer2" 
+			width="4000" height="496"
+			style="display: none; position: absolute; left: 0; top: 0; z-index: -2;"></canvas>
+		<canvas id="parallaxLayer1" 
+			width="4000" height="496"
+			style="display: none; position: absolute; left: 0; top: 0; z-index: -1;"></canvas>
+		<canvas id="parallaxLayer0" 
+			width="4000" height="496" 
+			style="display: none; position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+
+		<!-- Tile Image Canvas (ground,etc) -->
+		<canvas id="tileLayer" 
+			width="5000" height="496"
+			style="display: none; position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+
+		<!-- Entity Canvas -->
+		<canvas id="gameLayer" 
+			width="5000" height="496" 
+			style="display: none; position: absolute; left: 0; top: 0; z-index: 2;"></canvas>
+
+		<!-- Overlay object/ui canvas -->
+		<canvas id="uiLayer" 
+			width="640" height="360" 
+			style="display: none; position: absolute; left: 0; top: 0; z-index: 4;"></canvas>
+		<canvas id="viewport" 
+			width="640" height="360" 
+			style="
+			image-rendering: -moz-crisp-edges;
+    		image-rendering: -webkit-crisp-edges;
+    		image-rendering: pixelated;
+    		image-rendering: crisp-edges;; z-index: 5;"></canvas>
+		
+		<canvas id="objectLayer" 
+			width="1280" height="720" 
+			style="
+			image-rendering: -moz-crisp-edges;
+    		image-rendering: -webkit-crisp-edges;
+    		image-rendering: pixelated;
+    		image-rendering: crisp-edges;
+			display: none;margin:auto; margin-top:15% ;left: 0; top: 0; z-index: 6;"></canvas>
+	</body>
+</html>

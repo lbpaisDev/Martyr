@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="../jsCode/helpMenu.js"></script>
+		<style>
+			body {
+				opacity:0;
+                background: black;
+	 		}
+
+	 		input {
+	 			background-color: Transparent;
+			    background-repeat: no-repeat;
+			    border: none;
+			    outline: 0;
+			    cursor:pointer;
+			    overflow: hidden;
+				position: absolute;
+	 		}
+
+	 		#back{
+	 			right: 75%;
+	 			top: 80%;
+				image-rendering: -moz-crisp-edges;
+     		    image-rendering: -webkit-crisp-edges;
+    	      	image-rendering: pixelated;
+    	     	image-rendering: crisp-edges;
+	 		}
+
+	 	</style>
+	</head>
+	
+	<body>
+		<image id="help" src="../assets/bg_helpMenu.png" style="image-rendering: -moz-crisp-edges;
+     		    image-rendering: -webkit-crisp-edges;
+    	      	image-rendering: pixelated;
+    	      	image-rendering: crisp-edges;"
+        <main>
+                <nav>
+                        <input type="image" id="back" src="../assets/ui_btnBack_off.png"></input>
+						<audio>
+								<source id = "hoover" src = "../assets/cursormove.mp3 " type="audio/mpeg">
+						</audio>
+					</nav>	
+        </main>
+	</body>
+</html>
